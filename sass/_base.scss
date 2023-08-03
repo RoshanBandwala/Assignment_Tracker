@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size:22px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:$font-color;
+    font-weight: bold;
+
+}
+body{
+    background-color: lightblue;
+    min-height:100vh;
+    @include flexCenter;
+    
+}
+.main{
+    background-color: lightcyan;
+    width:100%;
+    max-width:800px;
+    min-height:100vh;
+    padding:1rem;
+    margin-right: 30%;
+    overflow-y:hidden;
+    @include flexStart;
+    flex-direction: column;
+    @include mq(800px){
+        min-height: 95vh;
+        max-height:95vh;
+        border:3px solid $border-color;
+        box-shadow: 5px 10px 8px $shadow-color;
+        border-radius: 4px;
+        
+
+
+    }
+
+
+
+}
+section{
+    width:100%;
+    margin:6%;
+     
+}
+a:hover{
+    color:$link-hover;
+    font-weight: bolder;
+}
+.bold{
+    font-weight: bold;
+}
+h6{
+    margin-top:25%;
+}
